@@ -30,7 +30,7 @@ const INFO = {
             location: "Adityapur, Jharkhand",
             degree: "Bachelor of Technology in Computer Science and Engineering",
             duration: "2022 – Present",
-            details: "CGPA: 7.56 (till 6th sem)"
+            
         },
         {
             institution: "DS Public School",
