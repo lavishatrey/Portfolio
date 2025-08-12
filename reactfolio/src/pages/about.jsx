@@ -23,10 +23,7 @@ const About = () => {
 			<Helmet>
 				<title>{`About | ${INFO.main.title}`}</title>
 				<meta name="description" content={currentSEO.description} />
-				<meta
-					name="keywords"
-					content={currentSEO.keywords.join(", ")}
-				/>
+				<meta name="keywords" content={currentSEO.keywords.join(", ")} />
 			</Helmet>
 
 			<div className="page-content">
@@ -48,6 +45,59 @@ const About = () => {
 								<div className="subtitle about-subtitle">
 									{INFO.about.description}
 								</div>
+
+								{/* Education Section */}
+								{INFO.about.education && INFO.about.education.length > 0 && (
+									<div className="education-section">
+										<h3 className="education-title">Education</h3>
+										<ul className="education-list">
+											{INFO.about.education.map((edu, index) => (
+												<li key={index} className="education-item">
+													<strong>{edu.institution}</strong> — {edu.degree}
+													<br />
+													<small>
+														{edu.location} | {edu.duration}
+													</small>
+													{edu.details && (
+														<>
+															<br />
+															<span>{edu.details}</span>
+														</>
+													)}
+												</li>
+											))}
+										</ul>
+									</div>
+								)}
+
+								{/* Skills Section */}
+								{INFO.about.technicalSkills && (
+									<div className="skills-section">
+										<h3 className="skills-title">Technical Skills</h3>
+										<ul className="skills-list">
+											<li>
+												<strong>Languages:</strong>{" "}
+												{INFO.about.technicalSkills.languages.join(", ")}
+											</li>
+											<li>
+												<strong>Problem Solving:</strong>{" "}
+												{INFO.about.technicalSkills.problemSolving.join(", ")}
+											</li>
+											<li>
+												<strong>Web Technologies:</strong>{" "}
+												{INFO.about.technicalSkills.webTechnologies.join(", ")}
+											</li>
+											<li>
+												<strong>Databases:</strong>{" "}
+												{INFO.about.technicalSkills.databases.join(", ")}
+											</li>
+											<li>
+												<strong>Tools/Platforms:</strong>{" "}
+												{INFO.about.technicalSkills.tools.join(", ")}
+											</li>
+										</ul>
+									</div>
+								)}
 							</div>
 
 							<div className="about-left-side">
@@ -66,6 +116,7 @@ const About = () => {
 								</div>
 							</div>
 						</div>
+
 						<div className="about-socials-mobile">
 							<Socials />
 						</div>

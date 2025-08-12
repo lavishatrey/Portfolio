@@ -23,11 +23,39 @@ const INFO = {
 
 	about: {
     title: "I’m LAVISH ATREY. I live in India, where I design the future.",
-    description:
-        "I've worked on a variety of projects over the years and I'm proud of the progress I've made. Many of these projects are open-source and available for others to explore and contribute to. If you're interested in any of the projects I've worked on, please feel free to check out the code and suggest any improvements or enhancements you might have in mind. Collaborating with others is a great way to learn and grow, and I'm always open to new ideas and feedback.",
-
-    
+    description: "I am a backend developer with expertise in Node.js. I have experience in building scalable, secure and reliable web applications using various frameworks and technologies. I am passionate about learning new skills and improving my craft.",
+    education: [
+        {
+            institution: "NIT Jamshedpur",
+            location: "Adityapur, Jharkhand",
+            degree: "Bachelor of Technology in Computer Science and Engineering",
+            duration: "2022 – Present",
+            details: "CGPA: 7.56 (till 6th sem)"
+        },
+        {
+            institution: "DS Public School",
+            location: "Muzaffarnagar, U.P.",
+            degree: "Class XII - CBSE",
+            duration: "2020 – 2021",
+            details: "97%"
+        },
+        {
+            institution: "DS Public School",
+            location: "Muzaffarnagar, U.P.",
+            degree: "Class X - CBSE",
+            duration: "2018 – 2019",
+            details: "94%"
+        }
+    ],
+    technicalSkills: {
+        languages: ["C", "C++", "Python", "Java"],
+        problemSolving: ["Data Structures & Algorithms"],
+        webTechnologies: ["HTML", "CSS", "JavaScript", "React", "Node.js", "Express.js", "Next.js", "Tailwind CSS", "Docker"],
+        databases: ["MongoDB", "MySQL"],
+        tools: ["Git", "GitHub"]
+    }
 },
+
 
 	articles: {
 		title: "I'm passionate about pushing the boundaries of what's possible and inspiring the next generation of innovators.",
